@@ -1,0 +1,172 @@
+/* ── WRAPPER ── */
+.dashboard-wrapper {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ── HEADER ── */
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.dashboard-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ── COUNT BADGE ── */
+.dashboard-count {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #4f8ef7;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  border: 1px solid #bfdbfe;
+}
+
+/* ── NO DATA ── */
+.no-data {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 15px;
+  padding: 60px 0;
+}
+
+/* ── TABLE CONTAINER ── */
+.table-container {
+  overflow-x: auto;
+}
+
+/* ── TABLE ── */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* ── TABLE HEADER ── */
+.dashboard-table thead tr {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.dashboard-table th {
+  padding: 13px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* ── TABLE BODY ── */
+.dashboard-table td {
+  padding: 14px 16px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* ── CANDIDATE NAME ── */
+.candidate-name {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* ── STATUS DROPDOWN ── */
+.dashboard-table select {
+  padding: 6px 10px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  background-color: #f9fafb;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.dashboard-table select:focus {
+  border-color: #4f8ef7;
+}
+
+/* ── STATUS BADGE ── */
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.status-shortlisted {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-interviewed {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* ── SCHEDULE BUTTON ── */
+.schedule-btn {
+  padding: 7px 14px;
+  background-color: #4f8ef7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.schedule-btn:hover {
+  background-color: #3b7de8;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    padding: 20px 16px;
+    margin: 20px 16px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 22px;
+  }
+}

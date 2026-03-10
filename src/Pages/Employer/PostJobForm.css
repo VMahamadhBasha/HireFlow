@@ -1,0 +1,221 @@
+/* ── RESET & BASE ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #1a1a2e;
+}
+
+/* ── PAGE WRAPPER ── */
+.form-wrapper {
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ── MAIN HEADING ── */
+.form-wrapper h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f8ef7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 28px 0 14px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8f0fe;
+}
+
+/* ── DIVIDER ── */
+.form-divider {
+  border: none;
+  border-top: 1px solid #f0f2f5;
+  margin: 20px 0;
+}
+
+/* ── TWO COLUMN ROW ── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* ── SINGLE FIELD WRAPPER ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* ── LABEL ── */
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 7px;
+  letter-spacing: 0.02em;
+}
+
+/* ── INPUT ── */
+.form-group input {
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* ── SELECT ── */
+.form-group select {
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+/* ── TEXTAREA ── */
+.form-group textarea {
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* ── FOCUS STATE ── */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4f8ef7;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.1);
+}
+
+/* ── PLACEHOLDER ── */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* ── ERROR INPUT BORDER ── */
+.form-group input.input-error,
+.form-group select.input-error,
+.form-group textarea.input-error {
+  border-color: #ef4444;
+  background-color: #fff5f5;
+}
+
+/* ── ERROR MESSAGE ── */
+.error-text {
+  font-size: 12px;
+  color: #ef4444;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── SUBMIT BUTTON ── */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  background-color: #4f8ef7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3b7de8;
+  box-shadow: 0 4px 12px rgba(79, 142, 247, 0.3);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.submit-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ── SUCCESS MESSAGE ── */
+.success-msg {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background-color: #f0fdf4;
+  border: 1.5px solid #22c55e;
+  border-radius: 10px;
+  color: #16a34a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* ── RESPONSIVE MOBILE ── */
+@media (max-width: 640px) {
+
+  .form-wrapper {
+    margin: 20px 16px;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

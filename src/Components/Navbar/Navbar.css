@@ -1,0 +1,88 @@
+/* ── NAVBAR ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── BRAND ── */
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 800;
+  color: #4f8ef7;
+  letter-spacing: 0.02em;
+}
+
+/* ── LINKS ── */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #4f8ef7;
+}
+
+/* ── RIGHT SIDE ── */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ── ROLE BADGE ── */
+.navbar-role {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f8ef7;
+  background-color: #eff6ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+/* ── LOGOUT BUTTON ── */
+.logout-btn {
+  padding: 8px 18px;
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logout-btn:hover {
+  background-color: #fecaca;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+}

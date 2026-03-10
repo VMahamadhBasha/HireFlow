@@ -1,0 +1,232 @@
+/* ── WRAPPER ── */
+.schedule-wrapper {
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ── BACK BUTTON ── */
+.back-btn {
+  background: none;
+  border: none;
+  color: #4f8ef7;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #3b7de8;
+}
+
+/* ── HEADING ── */
+.schedule-wrapper h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.schedule-wrapper > p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* ── CANDIDATE CARD ── */
+.candidate-card {
+  background-color: #f8fafc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+
+.candidate-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f8ef7;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.candidate-info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.candidate-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f8ef7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 24px 0 14px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8f0fe;
+}
+
+/* ── FORM ROW ── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* ── FORM GROUP ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* ── LABEL ── */
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 7px;
+}
+
+/* ── INPUT SELECT TEXTAREA ── */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* ── FOCUS ── */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4f8ef7;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.1);
+}
+
+/* ── TEXTAREA ── */
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ── ERROR ── */
+.error-text {
+  font-size: 12px;
+  color: #ef4444;
+  margin-top: 5px;
+}
+
+/* ── SUBMIT BUTTON ── */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background-color: #4f8ef7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: #3b7de8;
+  box-shadow: 0 4px 12px rgba(79, 142, 247, 0.3);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* ── SUCCESS MESSAGE ── */
+.success-msg {
+  margin-top: 18px;
+  padding: 16px 18px;
+  background-color: #f0fdf4;
+  border: 1.5px solid #22c55e;
+  border-radius: 10px;
+  color: #16a34a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── BACK TO DASHBOARD BUTTON ── */
+.back-dashboard-btn {
+  padding: 8px 20px;
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.back-dashboard-btn:hover {
+  background-color: #16a34a;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .schedule-wrapper {
+    padding: 24px 16px;
+    margin: 20px 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-info-row {
+    grid-template-columns: 1fr;
+  }
+}
