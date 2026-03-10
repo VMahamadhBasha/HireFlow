@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HireFlow/static/css/main.a13dc7fa.css",
+    "main.js": "/HireFlow/static/js/main.93d7b7b9.js",
+    "static/js/453.86c3e1fc.chunk.js": "/HireFlow/static/js/453.86c3e1fc.chunk.js",
+    "index.html": "/HireFlow/index.html",
+    "main.a13dc7fa.css.map": "/HireFlow/static/css/main.a13dc7fa.css.map",
+    "main.93d7b7b9.js.map": "/HireFlow/static/js/main.93d7b7b9.js.map",
+    "453.86c3e1fc.chunk.js.map": "/HireFlow/static/js/453.86c3e1fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a13dc7fa.css",
+    "static/js/main.93d7b7b9.js"
+  ]
+}
